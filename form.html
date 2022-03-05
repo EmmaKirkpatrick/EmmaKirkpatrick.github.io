@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/challenge.html">Challenge</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="/form.html">Form</a></li>
+            </ul>
+        </nav> 
+
+        <header>
+            <h1>Reserve your Room</h1>
+            <h2>Our reservation policies</h2>
+        </header>
+
+        <section class="policies">
+            <ul>
+                <li>Check-in time after 3:00 pm on</li>
+                <li>Check-out time by 11:00am or charges are incurred</li>
+                <li>Breakfast and afternoon tea/snacks included in cost</li>
+                <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+                <li>Deposit required at booking</li>
+                <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+            </ul>
+        </section>
+
+        <section class="reserve">
+            <form method="post" name="reservation" data-netlify="true">
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <Label for="phone">Phone Number</Label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div>
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" name="check-in" id="check-in" required>
+                </div>
+
+                <div>
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" name="check-out" id="check-out" required>
+                </div>
+
+                <div>
+                    <label for="numberOfGuests">Number of Guests</label>
+                    <input type="number" name="numberOfGuests" id="numberofGuests" min="1" max="4" step="1" required>
+                </div>
+
+                <div>
+                    <label for=roomType>Room Type</label>
+                    <select name="roomtype" id="roomtype">
+                        <option value="King">King</option>
+                        <option value="Queen">Queen</option>
+                        <option value="full">Full</option>
+                        <option value="twin">Twin</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>Ocean View (additional cost)</div>
+                    <label for="view">Yes</label>
+                    <input type="radio" name="view" id="yes" value="yes">
+
+                    <label for="view">No</label>
+                    <input type="radio" name="view" id="no" value="no">
+                </div>
+
+                <div>
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+
+                <div>
+                    <label for="terms">I agree to all the terms listed above</label>
+                    <input type="checkbox" name="terms" id="terms">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </div> 
+
+    <footer>
+        <p>
+            &copy;2022 Northern Comfort Topsham, VT
+        </p>
+    </footer>
+
+</body>
+</html>
