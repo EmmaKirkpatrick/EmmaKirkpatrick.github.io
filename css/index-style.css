@@ -1,0 +1,66 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+h1, h2, h3 {
+    color: #0f4c75;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+    text-underline-offset: 8.5px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 5.5px;
+}
+
+nav li {
+    list-style-type: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #86c5f0
+}
+
+nav,
+header {
+    text-align: center;
+    color: #86c5f0
+}
+
+nav a,
+footer a {
+    color: #86c5f0
+}
+
+.assignments li {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.assignments li::before {
+    font-size: 1rem;
+    font-family: sans-serif;
+    content: "\263A ";
+    
+}
+
+.assignments a:link {
+    text-decoration: none;
+    color: #86c5f0
+}
+.assignments a:visited {
+    color: #86c5f0
+    
+}
+
+.assignments a:hover {
+    content: "\263A ";
+}
